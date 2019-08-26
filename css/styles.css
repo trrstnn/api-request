@@ -16,7 +16,9 @@ html, body {
 body {
     font-family: "Nunito", sans-serif;
     text-align: center;
-    background: rgba(235, 235, 235, 0.9);
+    background-image:url("geobg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 header {
@@ -29,7 +31,7 @@ header {
 }
 
 header h1 {
-    font-size: 1.25em;
+    font-size: 2em;
     color: rgba(50, 50, 50, 0.9);
     margin-top: 35px;
 }

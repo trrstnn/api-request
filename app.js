@@ -11,7 +11,7 @@ async function getEmployees(url) {
     return Promise.all(employeeJSON.results);
 }
   
-
+// Dynamically Renders Employee cards using the json object retrieved from api request
 function createEmployeeCard(data) {
     data.map(person =>{ 
         const cardDiv = document.createElement('div');
@@ -81,6 +81,7 @@ function viewEmployee(data) {
   }
   return data;
 }
+//Passes promises down on to helper functions
      getEmployees(usersUrl)
       .then(createEmployeeCard)
       .then(viewEmployee)
